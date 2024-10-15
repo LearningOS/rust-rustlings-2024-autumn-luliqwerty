@@ -70,7 +70,7 @@ you may also like to reuse existing variable names because you are just converti
 values to different types like in this exercise.
 Fortunately Rust has a powerful solution to this problem: 'Shadowing'!
 You can read more about 'Shadowing' in the book's section 'Variables and Mutability':
-https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing
+https://rustwiki.org/zh-CN/book/ch03-01-variables-and-mutability.html#shadowing
 Try to solve this exercise afterwards using this technique."""
 
 [[exercises]]
@@ -85,7 +85,7 @@ than keyword 'let'.
 Constants types must also always be annotated.
 
 Read more about constants and the differences between variables and constants under 'Constants' in the book's section 'Variables and Mutability':
-https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants
+https://rustwiki.org/zh-CN/book/ch03-01-variables-and-mutability.html#constants
 """
 
 # FUNCTIONS
@@ -215,7 +215,7 @@ path = "exercises/primitive_types/primitive_types4.rs"
 mode = "test"
 hint = """
 Take a look at the Understanding Ownership -> Slices -> Other Slices section of the book:
-https://doc.rust-lang.org/book/ch04-03-slices.html
+https://rustwiki.org/zh-CN/book/ch04-03-slices.html
 and use the starting and ending indices of the items in the Array
 that you want to end up in the slice.
 
@@ -230,7 +230,7 @@ path = "exercises/primitive_types/primitive_types5.rs"
 mode = "compile"
 hint = """
 Take a look at the Data Types -> The Tuple Type section of the book:
-https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
+https://rustwiki.org/zh-CN/book/ch03-02-data-types.html#the-tuple-type
 Particularly the part about destructuring (second to last example in the section).
 You'll need to make a pattern to bind `name` and `age` to the appropriate parts
 of the tuple. You can do it!!"""
@@ -243,7 +243,7 @@ hint = """
 While you could use a destructuring `let` for the tuple here, try
 indexing into it instead, as explained in the last example of the
 Data Types -> The Tuple Type section of the book:
-https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
+https://rustwiki.org/zh-CN/book/ch03-02-data-types.html#the-tuple-type
 Now you have another tool in your toolbox!"""
 
 # VECS
@@ -346,7 +346,7 @@ Carefully reason about the range in which each mutable reference is in
 scope. Does it help to update the value of referent (x) immediately after
 the mutable reference is taken? Read more about 'Mutable References'
 in the book's section References and Borrowing':
-https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
+https://rustwiki.org/zh-CN/book/ch04-02-references-and-borrowing.html#mutable-references.
 """
 
 [[exercises]]
@@ -377,7 +377,7 @@ Tuple structs are basically just named tuples.
 Finally, Unit-like structs. These don't have any fields and are useful for generics.
 
 In this exercise you need to complete and implement one of each kind.
-Read more about structs in The Book: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
+Read more about structs in The Book: https://rustwiki.org/zh-CN/book/ch05-01-defining-structs.html"""
 
 [[exercises]]
 name = "structs2"
@@ -397,7 +397,7 @@ For is_international: What makes a package international? Seems related to the p
 
 For get_fees: This method takes an additional argument, is there a field in the Package struct that this relates to?
 
-Have a look in The Book, to find out more about method implementations: https://doc.rust-lang.org/book/ch05-03-method-syntax.html"""
+Have a look in The Book, to find out more about method implementations: https://rustwiki.org/zh-CN/book/ch05-03-method-syntax.html"""
 
 # ENUMS
 
@@ -487,7 +487,7 @@ The delicious_snacks module is trying to present an external interface that is
 different than its internal structure (the `fruits` and `veggies` modules and
 associated constants). Complete the `use` statements to fit the uses in main and
 find the one keyword missing for both constants.
-Learn more at https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
+Learn more at https://rustwiki.org/zh-CN/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
 
 [[exercises]]
 name = "modules3"
@@ -528,7 +528,7 @@ hint = """
 Hint 1: Use the `entry()` and `or_insert()` methods of `HashMap` to insert entries corresponding to each team in the scores table.
 Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
 Hint 2: If there is already an entry for a given key, the value returned by `entry()` can be updated based on the existing value.
-Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
+Learn more at https://rustwiki.org/zh-CN/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
 """
 
 # QUIZ 2
@@ -603,7 +603,7 @@ One way to handle this is using a `match` statement on
 `Err(something)`. This pattern is very common in Rust, though, so there's
 a `?` operator that does pretty much what you would make that match statement
 do for you! Take a look at this section of the Error Handling chapter:
-https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
+https://rustwiki.org/zh-CN/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
 and give it a try!"""
 
 [[exercises]]
@@ -639,7 +639,7 @@ errors implement the `error::Error` trait, we can capture lots of different erro
 object.
 
 Check out this section of the book:
-https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
+https://rustwiki.org/zh-CN/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
 
 Read more about boxing errors:
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html
@@ -697,7 +697,7 @@ path = "exercises/traits/traits1.rs"
 mode = "test"
 hint = """
 A discussion about Traits in Rust can be found at:
-https://doc.rust-lang.org/book/ch10-02-traits.html
+https://rustwiki.org/zh-CN/book/ch10-02-traits.html
 """
 
 [[exercises]]
@@ -721,7 +721,7 @@ Traits can have a default implementation for functions. Structs that implement
 the trait can then use the default version of these functions if they choose not
 implement the function themselves.
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
+See the documentation at: https://rustwiki.org/zh-CN/book/ch10-02-traits.html#default-implementations
 """
 
 [[exercises]]
@@ -732,7 +732,7 @@ hint = """
 Instead of using concrete types as parameters you can use traits. Try replacing the
 '??' with 'impl <what goes here?>'
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
+See the documentation at: https://rustwiki.org/zh-CN/book/ch10-02-traits.html#traits-as-parameters
 """
 
 [[exercises]]
@@ -743,7 +743,7 @@ hint = """
 To ensure a parameter implements multiple traits use the '+ syntax'. Try replacing the
 '??' with 'impl <> + <>'.
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax
+See the documentation at: https://rustwiki.org/zh-CN/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax
 """
 
 # QUIZ 3
@@ -764,7 +764,7 @@ path = "exercises/lifetimes/lifetimes1.rs"
 mode = "compile"
 hint = """
 Let the compiler guide you. Also take a look at the book if you need help:
-https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
+https://rustwiki.org/zh-CN/book/ch10-03-lifetime-syntax.html"""
 
 [[exercises]]
 name = "lifetimes2"
@@ -924,7 +924,7 @@ Step 1
 The compiler's message should help: since we cannot store the value of the actual type
 when working with recursive types, we need to store a reference (pointer) to its value.
 We should, therefore, place our `List` inside a `Box`. More details in the book here:
-https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes
+https://rustwiki.org/zh-CN/book/ch15-01-box.html#enabling-recursive-types-with-boxes
 
 Step 2
 Creating an empty list should be fairly straightforward (hint: peek at the assertions).
@@ -942,7 +942,7 @@ This is a straightforward exercise to use the Rc<T> type. Each Planet has
 ownership of the Sun, and uses Rc::clone() to increment the reference count of the Sun.
 After using drop() to move the Planets out of scope individually, the reference count goes down.
 In the end the sun only has one reference again, to itself. See more at:
-https://doc.rust-lang.org/book/ch15-04-rc.html
+https://rustwiki.org/zh-CN/book/ch15-04-rc.html
 
 * Unfortunately Pluto is no longer considered a planet :(
 """
@@ -987,7 +987,7 @@ https://doc.rust-lang.org/std/thread/fn.spawn.html
 
 A challenge with multi-threaded applications is that the main thread can
 finish before the spawned threads are completed.
-https://doc.rust-lang.org/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handles
+https://rustwiki.org/zh-CN/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handles
 
 Use the JoinHandles to wait for each thread to finish and collect their results.
 https://doc.rust-lang.org/std/thread/struct.JoinHandle.html
@@ -1002,7 +1002,7 @@ hint = """
 to **immutable** data. But we want to *change* the number of `jobs_completed`
 so we'll need to also use another type that will only allow one thread to
 mutate the data at a time. Take a look at this section of the book:
-https://doc.rust-lang.org/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct
+https://rustwiki.org/zh-CN/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct
 and keep reading if you'd like more hints :)
 
 
@@ -1033,7 +1033,7 @@ With both a sending end and a receiving end, it's possible to
 send values in one thread and receive them in another.
 Multiple producers are possible by using clone() to create a duplicate
 of the original sending end.
-See https://doc.rust-lang.org/book/ch16-02-message-passing.html for more info.
+See https://rustwiki.org/zh-CN/book/ch16-02-message-passing.html for more info.
 """
 
 # MACROS
